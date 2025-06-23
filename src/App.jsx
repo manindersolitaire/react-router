@@ -18,6 +18,7 @@ import ContactForm from "./components/ContactForm";
 import NotFound from "./components/NotFound";
 import JobLayout from "./layout/JobLayout";
 import Jobs, { jobLoader } from "./pages/Jobs";
+import JobDetails, { jobDetailsLoader } from "./components/JobDetails";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -31,6 +32,7 @@ const App = () => {
         </Route>
         <Route path="jobs" element={<JobLayout/>}>
              <Route index element={<Jobs/>} loader={jobLoader}/>
+             <Route path=":id" element={<JobDetails/>} loader={jobDetailsLoader}/>
         </Route>
         <Route path="products" element={<Products />} />
         <Route path="*" element={<NotFound/>} />

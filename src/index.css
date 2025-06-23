@@ -68,4 +68,25 @@ a.active{
 .jobs a {
   flex: 1;
   text-decoration: none;
+  padding: 10px;
+  background-color: lightgray;
+  color: black;
+}
+
+.job-details{
+  padding: 50px 0;
+}
+.job-details p {
+  max-width: 800px;
+  padding: 10px 0;
+
+}
+.job-details button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
 }
